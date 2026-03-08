@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EdgeFlow Trading Journal</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script>
+      window.tailwind = window.tailwind || {};
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace']
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@^19.0.0",
+          "react-dom/client": "https://esm.sh/react-dom@^19.0.0/client?external=react",
+          "lucide-react": "https://esm.sh/lucide-react@^0.546.0?external=react",
+          "motion/react": "https://esm.sh/motion@^12.35.0/react?external=react",
+          "date-fns": "https://esm.sh/date-fns@^4.1.0",
+          "clsx": "https://esm.sh/clsx@^2.1.1",
+          "tailwind-merge": "https://esm.sh/tailwind-merge@^3.5.0",
+          "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+          "jspdf": "https://esm.sh/jspdf@^4.2.0",
+          "recharts": "https://esm.sh/recharts@^3.7.0?external=react,react-dom",
+          "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.98.0"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
